@@ -3,5 +3,5 @@
 ARGS ?= -t corosync-qnetd:latest
 
 build:
-	docker pull debian:buster-slim
+	docker pull debian:bookworm-slim
 	docker build $(ARGS) .

@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    corosync-qnetd:
+        image: docker-corosync-qnetd:latest
+        container_name: qnetd
+        ports:
+            - 5403:5403
+        volumes:
+            - corosync_data:/etc/corosync/qnetd/nssdb
+        environment:
+            - CLUSTER_NAME=${CLUSTER_NAME}
+            - PROXMOX_NODE=${PROXMOX_NODE}
+            - QNETD_DATA=${QNETD_DATA}
+volumes:
+  corosync_data:
