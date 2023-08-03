@@ -1,3 +1,4 @@
+[![Docker](https://github.com/LordMrcS/docker-corosync-qnetd/actions/workflows/github-publish.yml/badge.svg?branch=master)](https://github.com/LordMrcS/docker-corosync-qnetd/actions/workflows/github-publish.yml)
 # Dockerized Corosync QNet Daemon
 
 Sets up a Corosync v3 QNet Daemon for use with Proxmox.
