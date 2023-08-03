@@ -1,7 +1,7 @@
 version: '3.3'
 services:
     corosync-qnetd:
-        image: docker-corosync-qnetd:latest
+        image: ghcr.io/lordmrcs/docker-corosync-qnetd:master
         container_name: qnetd
         ports:
             - 5403:5403
